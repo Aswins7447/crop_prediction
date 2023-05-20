@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction Portal</title>
+</head>
+<body>
+
+    <pre>
+        <center>
+            <h1> CROP PREDICTION PORTAL</h1>
+
+            <hr>
+        </center>
+            <br><br>
+            <form name = 'soil-details' method = 'POST' action = ''>
+                {% csrf_token %}
+                <b>
+                Nitrogen Intensity:     <input type = 'text' name = 'nitrogen'>
+                Phosphorous Intensity:  <input type = 'text' name = 'phosphorous'>
+                Potassium Intensity:    <input type = 'text' name = 'potassium'>
+                Temperature (farenheit):<input type = 'text' name = 'temperature'>
+                Humidity:               <input type = 'text' name = 'humidity'>
+                Ph:                     <input type = 'text' name = 'pH'>
+               
+                <input type = 'submit' value = 'Show the Crop'>
+            </b>
+            </form>
+        
+    </pre>
+    
+</body>
+</html>
+
+<!--
+    n
+    p
+    k
+    temperature
+    himidity
+    ph
+    
+-->
